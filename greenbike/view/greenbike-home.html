@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Green Bike</title>
+	<link rel="icon" href="image/icon/bike-ico.png" type="image/png" size="20x20"/>
+	<link rel="stylesheet" href="style/style.css" type="text/css" />
+</head>
+<body>
+	<div id="head" class="header">
+		<div class="box-hd">
+		<div id="logo-gb" class="c-logo-gb">
+			<a href="#">
+				<img src="image/icon/log-greenbike.png" width="281" height="67" alt="GreenBike Homepage"/> 
+			</a>
+		</div>
+		<div class="box-search">
+		<form action="#">
+			<input type="submit" id="timkiem" class="c-timkiem" value="Tìm Kiếm" />
+			<input type="text" value="Tìm kiếm sản phẩm" onfocus="if(this.value=='Tìm kiếm sản phẩm'){this.value = '';}" onblur="if(this.value==''){this.value='Tìm kiếm sản phẩm';}" id="search" class="c-search" name="n-search" title="Tìm kiếm sản phẩm"/>
+			<!--
+			- ở phần input "Tìm kiếm sản phẩm", onfocus nghĩa là khi click vào textbox tìm kiểm sản phẩm sẽ thực hiện kiểm tra điều kiện, nếu giá trị của thẻ này lúc này là "Tìm kiếm sản phẩm" thì sẽ gán lại giá trị "" gia thẻ này.
+			- ngược lại, onblur là khi bạn ra khỏi textbox tìm kiếm mà giá trị của thẻ này là rỗng thì sẽ gán lại giá trị "tìm kiếm sản phẩm" cho thẻ này.
+			
+			NOTE :
+			là một hướng làm trực tiếp thay vì sẽ gọi hàm javascript rồi thực thi công việc trong hàm, thì sẽ thực thi trực tiếp ngay khi gọi thuộc tính sự kiện onfocus, onblur, onclick..v..v
+			-->
+		</form>
+		</div>
+		</div>
+	</div>
+</body>
+</html>

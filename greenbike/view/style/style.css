@@ -1,0 +1,80 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+/*-----------------------------header-----------------------------------*/
+
+.header{
+	min-height: 80px;
+	width: 100%;
+	padding-top: 15px;
+	background: #111;
+}
+
+.box-hd{
+	margin: 0 auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	max-width: 1150px;
+	min-height: 75px;
+}
+
+.c-logo-gb{ /*ở class này, nếu dùng thẻ span thì sẽ không set được background-size theo tỉ lệ ảnh
+	"http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_background-size2" sử dụng đường link này set div thành span và xem kết quả*/
+	/*--------------------------------------------------*/
+	/*background: url(../image/icon/log-#008a2abike.png);
+	background-size: 281px 67px;
+	background-repeat: no-repeat;
+	display: block;*/
+	float: left;
+	margin-right: 0;
+}
+
+.c-search{
+	min-width: 370px;
+	height: 23px;
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 7px;
+	padding-bottom:7px;
+	border:1.5px solid #008a2a;
+	outline: none;
+	/*-----------text------------*/
+	font-size: 16px;
+	color: #a5a5a5;
+
+}
+
+.c-search:focus{
+	box-shadow: -0.1px 0.1px 2px #008a2a, -0.1px -0.1px 2px #008a2a, 0.1px 0.1px 2px #008a2a, 0.1px -0.1px 2px #008a2a;
+}
+
+.c-timkiem{
+	position: absolute;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: 11px;
+	margin-left: 417px;
+	max-width: 17%; /*thể hiện max-width : 17%; là để khi người dùng co giản trình duyệt thì chữ tìm kiếm của nút "tìm kiếm" sẽ không 
+	trượt ra ngoài khung search (tùy theo lúc làm, set kích thuốc khung search và ký tự trong nút search mà set giá trị max-width hợp lí)*/
+	background: none;
+	border: none;
+	/*background và border là none nghĩa là cho phép border và background của thẻ này không có (trong suốt)*/
+	color: white;
+	font-size: 15px;
+	outline: none;
+}
+
+.box-search{
+	position: relative;
+	float: left; /*bỏ float sẽ làm cho div.box-search không được set theo min-width của chính nó, mà nó sẽ set theo width của div chứa nó*/
+	min-width: 500px;
+	background: #008a2a;
+	white-space: nowrap;
+	/*sử dụng thuộc tính white-space : nowrap; sẽ không cho các thực thể trong div.box-search xuống hàng khi bị co giãn bởi người sử dụng trình duyệt
+	link white-space : http://www.w3schools.com/cssref/pr_text_white-space.asp*/
+	margin-top: 12px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
