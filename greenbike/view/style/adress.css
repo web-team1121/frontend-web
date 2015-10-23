@@ -1,0 +1,33 @@
+/* CSS Document */
+#rightaddress{
+	background:#111;
+	float:right;
+	min-width:240px;
+	height:70px;
+	margin-right:-20px;
+	margin-top:-3px;
+}
+.span1{
+	font-size:12px;
+	font-weight:bold;
+	color:#FFFFFF;
+	padding-left:12px;
+}
+.span2{
+	font-size:12px;
+	background:#FF0000;
+	border-radius:3px;
+	margin-left:29px;
+	padding-left:4px;
+	padding-right:4px;
+	padding-top:2px;
+	padding-bottom:2px;
+	color:#FFFFFF;
+	font-size:10px;
+}
+.span3{
+	font-size:12px;
+	font-weight:bold;
+	color:#FFFFFF;
+	padding-left:6px;
+}

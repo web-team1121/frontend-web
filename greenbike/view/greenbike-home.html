@@ -5,6 +5,7 @@
 	<title>Green Bike</title>
 	<link rel="icon" href="image/icon/bike-ico.png" type="image/png" size="20x20"/>
 	<link rel="stylesheet" href="style/style.css" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="style/adress.css">
 </head>
 <body>
 	<div id="head" class="header">
@@ -17,7 +18,7 @@
 		<div class="box-search">
 		<form action="#">
 			<input type="submit" id="timkiem" class="c-timkiem" value="Tìm Kiếm" />
-			<input type="text" value="Tìm kiếm sản phẩm" onfocus="if(this.value=='Tìm kiếm sản phẩm'){this.value = '';}" onblur="if(this.value==''){this.value='Tìm kiếm sản phẩm';}" id="search" class="c-search" name="n-search" title="Tìm kiếm sản phẩm"/>
+			<input type="text" value="Tìm kiếm sản phẩm" onFocus="if(this.value=='Tìm kiếm sản phẩm'){this.value = '';}" onBlur="if(this.value==''){this.value='Tìm kiếm sản phẩm';}" id="search" class="c-search" name="n-search" title="Tìm kiếm sản phẩm"/>
 			<!--
 			- ở phần input "Tìm kiếm sản phẩm", onfocus nghĩa là khi click vào textbox tìm kiểm sản phẩm sẽ thực hiện kiểm tra điều kiện, nếu giá trị của thẻ này lúc này là "Tìm kiếm sản phẩm" thì sẽ gán lại giá trị "" gia thẻ này.
 			- ngược lại, onblur là khi bạn ra khỏi textbox tìm kiếm mà giá trị của thẻ này là rỗng thì sẽ gán lại giá trị "tìm kiếm sản phẩm" cho thẻ này.
@@ -26,7 +27,13 @@
 			là một hướng làm trực tiếp thay vì sẽ gọi hàm javascript rồi thực thi công việc trong hàm, thì sẽ thực thi trực tiếp ngay khi gọi thuộc tính sự kiện onfocus, onblur, onclick..v..v
 			-->
 		</form>
+			
 		</div>
+		<div id="rightaddress">
+				<img src="image/icon/icon_maps.jpg" /><span class="span1">Số 15 Kim Mã-Ba Đình-Hà Nội</span><br>
+				<span class="span2">Bản đồ tới Showrom</span><br>
+				<img src="image/icon/icon_phone.jpg"><span class="span3">Hotline:(043)7368080</span>
+			</div>
 		</div>
 	</div>
 </body>
