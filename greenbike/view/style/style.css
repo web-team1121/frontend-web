@@ -5,8 +5,16 @@
 
 /*-----------------------------header-----------------------------------*/
 
+/*max-width và min-width rất khác biệt, một khác biệt dễ nhận thấy nhất là khi ta set min-width cho một div ta sẽ thấy nó trải dài
+vô tận, nhưng bị giới hạn bởi div chứa nó (ngay cả khi độ dài ký tự hay những element trong nó trong nó không đạt đến độ dài min của nó)
+chỉ khi sử dung thuộc tính float: left/right thì mới có thể tùy chỉnh độ dài theo ý muốn.
+
+thử nghiệm với link sau đây, max-width và min-width
+
+link: http://www.w3schools.com/cssref/tryit.asp?filename=trycss_dim_max-width*/
+
 .header{
-	min-height: 80px;
+	height: 80px;
 	width: 100%;
 	padding-top: 15px;
 	background: #111;
@@ -16,7 +24,7 @@
 	margin: 0 auto;
 	padding-left: 5px;
 	padding-right: 5px;
-	max-width: 1150px;
+	width: 97%;
 	min-height: 75px;
 }
 
