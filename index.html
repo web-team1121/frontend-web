@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<body>
+
+		<script>
+		var xmlhttp = false;
+			if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+				xmlhttp = new XMLHttpRequest();
+			} 
+			else 
+			{// code for IE6, IE5
+				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.open("GET", "http://xml.editey.com/file/0BxAPN_xdBCdzbGhRMnE3ZWNUeDA", true);
+			xmlhttp.send();
+			xmlhttp.onreadystatechange = function ()
+    {
+        alert(xmlhttp.readyState);
+        alert(xmlhttp.status);
+    };
+			var xmlDoc = xmlhttp.responseXML;
+			document.write("<table border='1'>");
+			var x = xmlDoc.getElementsByTagName("CD");
+			for ( var i = 0; i < x.length; i++) {
+				document.write("<tr><td>");
+				document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+				document.write("</td><td>");
+				document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+				document.write("</td></tr>");
+			}
+			document.write("</table>");
+		</script>
+
+	</body>
+</html>
